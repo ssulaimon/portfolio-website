@@ -1,0 +1,168 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Teko:wght@300;500;700&display=swap');
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Teko', sans-serif;
+
+}
+.header{
+    padding: 10px;
+    box-shadow: 0px 5px 5px #CCCCCC;
+    
+}
+.icon{
+    font-size: 30px;
+    display: inline-block;
+    position: relative;
+}
+.icon:hover{
+    cursor: pointer;
+}
+.drawer{
+    width: 200px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background-color: white;
+   
+    height: 100vh;
+    padding: 10px;
+    box-shadow: 5px 0px 5px #CCCCCC;
+    display: none;
+}
+li{
+    list-style: none;
+}
+.nav-item{
+    text-decoration: none;
+    color: black;
+    margin: 10px 0px;
+    display: block;
+    transition: font-size 1s;
+}
+.cancel{
+    display: block;
+    font-size: 30px;
+    text-align: right;
+    cursor: pointer;
+    transition: font-size 1s;
+}
+.cancel:hover{
+    font-size: 20px;
+}
+.nav-item:hover{
+    font-size: 20px;
+}
+#welcome{
+    text-align: center;
+    display: inline-block;
+    width: 300px
+    
+}
+.body-container{
+    margin: 10px;
+    
+}
+#title, #my-tech{
+    text-align: center;
+  
+    opacity: 0;
+    transition: opacity 3s ease-in;
+   
+}
+.image-container{
+    height: 250px;
+    width: 250px;
+    background-color: black;
+    margin: 10px auto;
+    border-radius: 50%;
+  
+
+}
+#aim{
+    font-weight: 100;
+    color: #917C78;
+    text-align: center;
+}
+#my-tech{
+    margin: 5px 0px;
+}
+.tech-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.tech-one, .tech-two{
+    margin: 10px auto;
+    border: 1.5px solid #917C78;
+    padding: 5px;
+    
+}
+.logo-one{
+    background-image: url(../images/dart-small.png);
+    height: 39px;
+    width: 50px;
+    display: inline-block;
+    margin-left: 20%;
+}.logo-two{
+    background-image: url(../images/flutter-small.png);
+    height: 38px;
+    width: 50px;
+
+    display: inline-block;
+}
+.logo-firebase{
+    background-image: url(../images/firebase.png);
+    height: 100px;
+    width: 100px;
+    display: block;
+    margin: 2px 30px;
+}
+.tech-title{
+    text-align: center;
+}
+#flutter-btn{
+    margin: 0 auto;
+    display: block;
+    padding: 5px;
+    background-color: black;
+    color: white;
+    border: none;
+}
+#flutter-experience{
+    text-align: center;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    margin: 5px 0;
+    opacity: 0;
+    display: none;
+    transition: opacity 5s;
+}
+
+
+@media only screen and (min-width: 700px){
+    *{
+        padding: 0px;
+        margin:0px;
+    }
+    .icon{
+        display: none;
+    }
+    .drawer{
+        display: none;
+    }
+    #welcome{
+        display: none;
+    }
+    .body-container{
+        margin: 10px 22vw ;
+    }
+    #title{
+        text-align: left;
+        font-size: 50px;
+    }
+    .image-container{
+        float: right;
+    }
+}

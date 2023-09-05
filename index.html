@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="sulaimon" />
+    <title>My Portfolio</title>
+    <script
+      src="https://kit.fontawesome.com/55d786b699.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body onload="showTitle()">
+    <div class="header">
+      <i class="fa-solid fa-bars icon" onclick="openDrawer()"></i>
+      <div class="drawer">
+        <i class="fa-solid fa-xmark cancel" onclick="closeDrawer()"></i>
+        <ul>
+          <li><a class="nav-item" href="">HOME</a></li>
+          <li><a class="nav-item" href="">MY WORKS</a></li>
+          <li><a class="nav-item" href="">CONTACT</a></li>
+        </ul>
+      </div>
+      <h3 id="welcome">Welcome</h3>
+    </div>
+    <div class="body-container">
+      <h1 id="title">WELCOME TO MY PORTFOLIO. <br />I AM SALAUDEEN SULAIMON</h1>
+
+      <div class="image-container"></div>
+      <p id="aim">
+        Welcome to my journey as a self tought programmer. I plan to make this
+        more fun and hand held experience to my journey experiences.
+      </p>
+      <h3 id="my-tech">TECHNOLOGY I HAVE WORKED WITH</h3>
+      <div class="tech-container">
+        <div class="tech-one">
+          <h4 class="tech-title">Dart & Flutter Framework</h4>
+          <div class="logo-one"></div>
+          <div class="logo-two"></div>
+          <button id="flutter-btn" onclick="expandFlutterExperience()">
+            My experience
+          </button>
+        </div>
+        <p id="flutter-experience">
+          My first programming experience came from the Dart language. Learning
+          the new syntax of variables (String, boolean, integer, constant,
+          dynamic and var).With I was also introduced to knowing about functions
+          in programming not forgetting about comparison operators. Learning an
+          object-oriented language like Dart without classes is also incomplete.
+          Flutter as Dart framework introduced me to cross-platform development
+          building fast mobile and web applications with the Dart language.
+        </p>
+        <div class="tech-two">
+          <h4 class="tech-title">Firebase</h4>
+          <div class="logo-firebase"></div>
+
+          <button id="flutter-btn" onclick="expandFlutterExperience()">
+            My experience
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script src="./script/index.js"></script>
+  </body>
+</html>
