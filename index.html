@@ -22,7 +22,7 @@
           <li><a class="nav-item" href="">CONTACT</a></li>
         </ul>
       </div>
-      <h3 id="welcome">Welcome</h3>
+      <h3 id="welcome">PORTFOLIO</h3>
     </div>
     <div class="body-container">
       <h1 id="title">WELCOME TO MY PORTFOLIO. <br />I AM SALAUDEEN SULAIMON</h1>
@@ -32,13 +32,16 @@
         Welcome to my journey as a self tought programmer. I plan to make this
         more fun and hand held experience to my journey experiences.
       </p>
-      <h3 id="my-tech">TECHNOLOGY I HAVE WORKED WITH</h3>
+      <h3 id="my-tech">TECHNOLOGIES I HAVE WORKED WITH</h3>
       <div class="tech-container">
         <div class="tech-one">
           <h4 class="tech-title">Dart & Flutter Framework</h4>
           <div class="logo-one"></div>
           <div class="logo-two"></div>
-          <button id="flutter-btn" onclick="expandFlutterExperience()">
+          <button
+            id="flutter-btn"
+            onclick="expandFunction('flutter-btn','flutter-experience')"
+          >
             My experience
           </button>
         </div>
@@ -55,10 +58,34 @@
           <h4 class="tech-title">Firebase</h4>
           <div class="logo-firebase"></div>
 
-          <button id="flutter-btn" onclick="expandFlutterExperience()">
+          <button
+            id="firebase-btn"
+            onclick="expandFunction('firebase-btn','firebase-experience')"
+          >
             My experience
           </button>
         </div>
+        <p id="firebase-experience">
+          My experience with Firebase as a backend solution includes Firebase
+          authentication, Firebase storage, and Firebase Cloud Firestore. The
+          use of these different solutions has come under Flutter development.
+          Firebase cloud firestore makes use of NoSQL (key and value).
+        </p>
+        <div class="tech-three">
+          <h4 class="tech-title">SQL</h4>
+          <div class="logo-sql"></div>
+          <button
+            id="sql-btn"
+            onclick="expandFunction('sql-btn','sql-experience')"
+          >
+            My experience
+          </button>
+        </div>
+        <p id="sql-experience">
+          I experienced the world of relational databases with MySQL. Introduced
+          to table creation, primary keys, adding and deleting tables, and data
+          queries.
+        </p>
       </div>
     </div>
 

@@ -10,20 +10,21 @@ function showTitle(){
     document.getElementById('my-tech').style.opacity = '1';
 
 }
-function expandFlutterExperience(){
-    const id = document.getElementById('flutter-experience');
+function expandFunction(btnId, experienceId){
+    const id = document.getElementById(experienceId);
     let displayValue = window.getComputedStyle(id).display;
     if (displayValue == 'none'){
         id.style.display = 'block';
        setTimeout(function (){
         id.style.opacity = '1';
        }, 0)
-        document.getElementById('flutter-btn').innerHTML = 'Close';
+        document.getElementById(btnId).innerHTML = 'Close';
     }else{
         id.style.opacity = '0';
        
         id.style.display = 'none';
-        document.getElementById('flutter-btn').innerHTML = 'My experience';
+        document.getElementById(btnId).innerHTML = 'My experience';
         
     }
 }
+

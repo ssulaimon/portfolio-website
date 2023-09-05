@@ -92,12 +92,16 @@ li{
     flex-direction: column;
     justify-content: center;
 }
-.tech-one, .tech-two{
+.tech-one, .tech-two, .tech-three{
     margin: 10px auto;
     border: 1.5px solid #917C78;
     padding: 5px;
     
 }
+.tech-three{
+    padding: 20px 35px;
+}
+
 .logo-one{
     background-image: url(../images/dart-small.png);
     height: 39px;
@@ -118,10 +122,17 @@ li{
     display: block;
     margin: 2px 30px;
 }
+.logo-sql{
+    background-image: url('../images/sql.png');
+    height: 75px;
+    width: 100px;
+    margin: 0 auto;
+    
+}
 .tech-title{
     text-align: center;
 }
-#flutter-btn{
+#flutter-btn, #firebase-btn, #sql-btn{
     margin: 0 auto;
     display: block;
     padding: 5px;
@@ -129,7 +140,7 @@ li{
     color: white;
     border: none;
 }
-#flutter-experience{
+#flutter-experience, #firebase-experience, #sql-experience{
     text-align: center;
     color: black;
     font-family: 'Roboto', sans-serif;
