@@ -207,6 +207,20 @@ a{
     font-size: 20px;
     margin-top: 10px;
 }
+#about{
+    margin-top: 20px;
+}
+.about-me{
+    margin: 5px;
+}
+.details-about-me{
+    font-weight: 100;
+}
+.about-me-list {
+    list-style-type: circle;
+    margin: 0 10px;
+    
+}
 
 
 @media only screen and (min-width: 700px){
