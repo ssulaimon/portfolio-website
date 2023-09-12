@@ -1,30 +1,39 @@
-function openDrawer(){
-    document.getElementsByClassName('drawer')[0].style.display = 'block';
-}
-function closeDrawer(){
-    document.getElementsByClassName('drawer')[0].style.display = 'none';
-}
+const projects = [{
+    name: "Food Resturant Landing Page",
+    image: './images/food-resturant.png',
+    link: "https://ssulaimon.github.io/resturant-website/",
+    gitLink:"https://github.com/ssulaimon/portfolio-website"
+}];
 
-function showTitle(){
-    document.getElementById('title').style.opacity = '1';
-    document.getElementById('my-tech').style.opacity = '1';
+let projectContainer = document.getElementById("project-container");
 
-}
-function expandFunction(btnId, experienceId){
-    const id = document.getElementById(experienceId);
-    let displayValue = window.getComputedStyle(id).display;
-    if (displayValue == 'none'){
-        id.style.display = 'block';
-       setTimeout(function (){
-        id.style.opacity = '1';
-       }, 0)
-        document.getElementById(btnId).innerHTML = 'Close';
-    }else{
-        id.style.opacity = '0';
-       
-        id.style.display = 'none';
-        document.getElementById(btnId).innerHTML = 'My experience';
-        
-    }
-}
+for(let index = 0; index < projects.length; index ++){
+   
+    let projectDiv = document.createElement("div");
+    let projectImage = document.createElement("img");
+    let projectLink = document.createElement("a");
+    let projectTitle = document.createElement('p');
 
+
+   
+    projectDiv.setAttribute('id', 'projectDiv');
+  
+    projectImage.setAttribute('src', projects[index].image);
+    projectTitle.setAttribute('id', 'projectName');
+    projectTitle.textContent = projects[index].name;
+
+    projectImage.setAttribute('id', 'projectImage');
+    projectLink.setAttribute('id', 'projectLink');
+    projectLink.setAttribute('target', '_blank')
+    projectLink.setAttribute('href', projects[index].link);
+    projectLink.textContent = "Link";
+  
+    projectDiv.appendChild(projectImage);
+    projectDiv.appendChild(projectLink);
+    projectDiv.appendChild(projectTitle);
+    projectContainer.appendChild(projectDiv);
+
+   
+   
+    
+}

@@ -1,267 +1,141 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&family=Teko:wght@300;500;700&display=swap');
-*{
-    padding: 0px;
-    margin: 0px;
-    font-family: 'Teko', sans-serif;
-
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  --primaryColor: #125488;
 }
-.header{
-    padding: 10px;
-    box-shadow: 0px 5px 5px #CCCCCC;
-    
+#name {
+  color: var(--primaryColor);
 }
-.icon{
-    font-size: 30px;
-    display: inline-block;
-    position: relative;
+#sub-title {
+  font-size: 10px;
+  color: grey;
 }
-.icon:hover{
-    cursor: pointer;
+.web-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 5px 0;
 }
-.drawer{
-    width: 200px;
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    background-color: white;
-   
-    height: 100vh;
-    padding: 10px;
-    box-shadow: 5px 0px 5px #CCCCCC;
-    display: none;
+.nav-links {
+  margin: 0 7px;
+  color: black;
 }
-li{
-    list-style: none;
+.nav-links:hover {
+  color: var(--primaryColor);
 }
-.nav-item{
-    text-decoration: none;
-    color: black;
-    margin: 10px 0px;
-    display: block;
-    transition: font-size 1s;
+.hire-me-btn {
+  border: 1px solid var(--primaryColor);
+  padding: 2px 10px;
+  font-size: 14px;
+  color: var(--primaryColor);
+  border-radius: 10px;
+  box-shadow: 1px 1px var(--primaryColor);
 }
-.cancel{
-    display: block;
-    font-size: 30px;
-    text-align: right;
-    cursor: pointer;
-    transition: font-size 1s;
+a {
+  text-decoration: none;
 }
-.cancel:hover{
-    font-size: 20px;
+.body {
+  margin: 20px 30px;
 }
-.nav-item:hover{
-    font-size: 20px;
+#image {
+  height: 200px;
+  width: 200px;
+  background-color: var(--primaryColor);
+  border-radius: 50%;
+  margin: 20px auto;
 }
-#welcome{
+#my-resume {
+  background-color: var(--primaryColor);
+  border: 1px solid var(--primaryColor);
+  color: white;
+  padding: 10px 15px;
+  margin-right: 30px;
+  box-shadow: 1px 1px black;
+}
+#hire-me-btn {
+  padding: 10px 18px;
+  border: 1px solid var(--primaryColor);
+  background-color: white;
+  color: var(--primaryColor);
+  box-shadow: 1px 1px var(--primaryColor);
+}
+#my-resume:hover {
+  cursor: pointer;
+}
+#hire-me-btn:hover {
+  cursor: pointer;
+}
+.btn-div {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+h3 {
+  color: var(--primaryColor);
+}
+#about {
+  color: grey;
+  font-size: 12px;
+  margin-bottom: 30px;
+}
+#project-container {
+  display: flex;
+  flex-direction: row;
+  margin: 10px 0px;
+  flex-wrap: wrap;
+}
+#projectImage {
+  height: 100px;
+  width: 160px;
+  display: block;
+}
+#projectDiv {
+  width: 160px;
+}
+#projectName {
+  color: grey;
+  font-size: 10px;
+}
+#projectLink {
+  display: block;
+  text-align: center;
+  color: var(--primaryColor);
+}
+@media only screen and (min-width: 780px) {
+  .nav-links {
+    margin: 0 20px;
+  }
+  .hire-me-btn {
+    margin: 0px 10px 0px 40px;
+  }
+  .body {
+    margin: 30px 20vw;
+  }
+  #name {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  #sub-title {
+    font-size: 14px;
+  }
+  #image {
+    float: right;
+  }
+  .btn-div {
+    margin: 10vh 0px;
+    justify-content: left;
+  }
+  #image {
+    height: 300px;
+    width: 300px;
+  }
+  h3 {
     text-align: center;
-    display: inline-block;
-    width: 300px
-    
-}
-.body-container{
-    margin: 10px;
-    
-}
-#title, #my-tech{
-    text-align: center;
-  
-    opacity: 0;
-    transition: opacity 3s ease-in;
-   
-}
-.image-container{
-    height: 250px;
-    width: 250px;
-    background-color: black;
-    margin: 10px auto;
-    border-radius: 50%;
-  
-
-}
-#aim{
-    font-weight: 100;
-    color: #917C78;
-    text-align: center;
-}
-#my-tech{
-    margin: 5px 0px;
-}
-.tech-container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-.tech-one, .tech-two, .tech-three{
-    margin: 10px auto;
-    border: 1.5px solid #917C78;
-    padding: 5px;
-    
-}
-.tech-three{
-    padding: 20px 35px;
-}
-
-.logo-one{
-    background-image: url(../images/dart-small.png);
-    height: 39px;
-    width: 50px;
-    display: inline-block;
-    margin-left: 20%;
-}.logo-two{
-    background-image: url(../images/flutter-small.png);
-    height: 38px;
-    width: 50px;
-
-    display: inline-block;
-}
-.logo-firebase{
-    background-image: url(../images/firebase.png);
-    height: 100px;
-    width: 100px;
-    display: block;
-    margin: 2px 30px;
-}
-.logo-sql{
-    background-image: url('../images/sql.png');
-    height: 75px;
-    width: 100px;
-    margin: 0 auto;
-    
-}
-.tech-title{
-    text-align: center;
-}
-#flutter-btn, #firebase-btn, #sql-btn{
-    margin: 0 auto;
-    display: block;
-    padding: 5px;
-    background-color: black;
-    color: white;
-    border: none;
-}
-#flutter-experience, #firebase-experience, #sql-experience{
-    text-align: center;
-    color: black;
-    font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    margin: 5px 0;
-    opacity: 0;
-    display: none;
-    transition: opacity 5s;
-}
-.currently{
-    text-align: center;
-}
-.learning-one{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-.item-one{
-    display: inline-block;
-}
-.item-one > h6{
-    text-align: center;
-    font-style: italic;
-}
-.desktop-nav{
-    display: none;
-}
-#my-project{
-    text-align: center;
-    margin: 20px 0;
-}
-#project-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    flex-wrap: wrap;
-    
-}
-#project{
-    display: inline-block;
-    background-color: black;
-    padding: 10px;
-    margin: 5px;
-}
-#project > h5{
-    text-align: center;
-    color: white;
-
-}
-a{
-    text-decoration: none;
-    color: white;
-   
-    text-align: center;
-}
-.icon-github{
-    display: block;
-    text-align: center;
-    color: white;
-    font-size: 30px;
-   
-}
-.link{
-    font-size: 20px;
-    margin-top: 10px;
-}
-#about{
-    margin-top: 20px;
-}
-.about-me{
-    margin: 5px;
-}
-.details-about-me{
-    font-weight: 100;
-}
-.about-me-list {
-    list-style-type: circle;
-    margin: 0 10px;
-    
-}
-
-
-@media only screen and (min-width: 700px){
-    *{
-        padding: 0px;
-        margin:0px;
-    }
-    .icon{
-        display: none;
-    }
-    .drawer{
-        display: none;
-    }
-    #welcome{
-        display: none;
-    }
-    .body-container{
-        margin: 10px 22vw ;
-    }
-    #title{
-        text-align: left;
-        font-size: 50px;
-    }
-    .image-container{
-        float: right;
-    }
-    .learning-one{
-        justify-content: center;
-    }
-    .desktop-nav{
-        display: block;
-        width: 250px;
-       margin: 0 auto;
-    }
-    .desktop-nav > a{
-        text-decoration: none;
-        color: black;
-        margin: 0 10px;
-    }
-    .desktop-nav > a:hover{
-        text-decoration: underline;
-    }
-  
+  }
+  #about {
+    font-size: 16px;
+  }
 }

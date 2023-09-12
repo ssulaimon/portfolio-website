@@ -2,200 +2,41 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="sulaimon" />
-    <title>My Portfolio</title>
-    <script
-      src="https://kit.fontawesome.com/55d786b699.js"
-      crossorigin="anonymous"
-    ></script>
+    <meta name="author" content="Salaudeen Sulaimon" />
+    <title>Welcome</title>
     <link rel="stylesheet" href="./css/index.css" />
   </head>
-  <body onload="showTitle()">
+  <body>
     <div class="header">
-      <i class="fa-solid fa-bars icon" onclick="openDrawer()"></i>
-      <div class="drawer">
-        <i class="fa-solid fa-xmark cancel" onclick="closeDrawer()"></i>
-        <ul>
-          <li><a class="nav-item" href="">HOME</a></li>
-          <li><a class="nav-item" href="#my-project">MY WORKS</a></li>
-          <li><a class="nav-item" href="">MY CONTACT</a></li>
-          <li><a class="nav-item" href="#about">ABOUT ME</a></li>
-        </ul>
-      </div>
-      <h3 id="welcome">PORTFOLIO</h3>
-      <div class="desktop-nav">
-        <a href="#">HOME</a>
-        <a href="#my-project">MY WORKS</a>
-        <a href="#">MY CONTACT</a>
-        <a href="#about">ABOUT ME</a>
+      <div class="web-nav">
+        <a href="#" class="nav-links">Home</a>
+        <a href="#about" class="nav-links">About</a>
+        <a href="#" class="nav-links">Contact</a>
+        <a href="#" class="nav-links">Project</a>
+        <a href="#" class="nav-links hire-me-btn">Hire Me!</a>
       </div>
     </div>
-    <div class="body-container">
-      <h1 id="title">WELCOME TO MY PORTFOLIO. <br />I AM SALAUDEEN SULAIMON</h1>
-
-      <div class="image-container"></div>
-      <p id="aim">
-        Welcome to my journey as a self tought programmer. I plan to make this
-        more fun and hand held experience to my journey experiences.
+    <div class="body">
+      <h4>Hello World! I am</h4>
+      <h1 id="name">SALAUDEEN SULAIMON</h1>
+      <p id="sub-title">Flutter Developer and Frontend Developer In Training</p>
+      <div id="image"></div>
+      <div class="btn-div">
+        <button id="my-resume">My Resume</button>
+        <button id="hire-me-btn">Hire Me</button>
+      </div>
+      <h3>About Me</h3>
+      <p id="about">
+        I am Sulaimon a self thought Dart Programmer and a Flutter Developer
+        from Lagos Nigeria. Built some personal project using the Flutter cross
+        platform framework. Currently exploring HTML, CSS and Javascript for web
+        frontend development.
       </p>
-      <h3 id="my-tech">TECHNOLOGIES I HAVE WORKED WITH</h3>
-      <div class="tech-container">
-        <div class="tech-one">
-          <h4 class="tech-title">Dart & Flutter Framework</h4>
-          <div class="logo-one"></div>
-          <div class="logo-two"></div>
-          <button
-            id="flutter-btn"
-            onclick="expandFunction('flutter-btn','flutter-experience')"
-          >
-            My experience
-          </button>
-        </div>
-        <p id="flutter-experience">
-          My first programming experience came from the Dart language. Learning
-          the new syntax of variables (String, boolean, integer, constant,
-          dynamic and var).With I was also introduced to knowing about functions
-          in programming not forgetting about comparison operators. Learning an
-          object-oriented language like Dart without classes is also incomplete.
-          Flutter as Dart framework introduced me to cross-platform development
-          building fast mobile and web applications with the Dart language.
-        </p>
-        <div class="tech-two">
-          <h4 class="tech-title">Firebase</h4>
-          <div class="logo-firebase"></div>
-
-          <button
-            id="firebase-btn"
-            onclick="expandFunction('firebase-btn','firebase-experience')"
-          >
-            My experience
-          </button>
-        </div>
-        <p id="firebase-experience">
-          My experience with Firebase as a backend solution includes Firebase
-          authentication, Firebase storage, and Firebase Cloud Firestore. The
-          use of these different solutions has come under Flutter development.
-          Firebase cloud firestore makes use of NoSQL (key and value).
-        </p>
-        <div class="tech-three">
-          <h4 class="tech-title">SQL</h4>
-          <div class="logo-sql"></div>
-          <button
-            id="sql-btn"
-            onclick="expandFunction('sql-btn','sql-experience')"
-          >
-            My experience
-          </button>
-        </div>
-        <p id="sql-experience">
-          I experienced the world of relational databases with MySQL. Introduced
-          to table creation, primary keys, adding and deleting tables, and data
-          queries.
-        </p>
-      </div>
-
-      <h4 class="currently">Currently Learning</h4>
+      <h3>Projects</h3>
+      <div id="project-container"></div>
     </div>
-    <div class="learning-one">
-      <div class="item-one">
-        <img src="./images/html.png" alt="html-image" />
-        <h6>Active</h6>
-      </div>
-      <div class="item-one">
-        <img src="./images/css.png" alt="css-image" />
-        <h6>Active</h6>
-      </div>
-      <div class="item-one">
-        <img src="./images/js.png" alt="js-image" />
-        <h6>Active</h6>
-      </div>
-    </div>
-    <h3 id="my-project">MY PROJECTS</h3>
-    <div id="project-container">
-      <div id="project">
-        <h5>SHOPPING APP</h5>
-        <a href="https://github.com/ssulaimon/ShoppingApp" target="_blank"
-          ><i class="fa-brands fa-github icon-github"></i
-        ></a>
-      </div>
-      <div id="project">
-        <h5>PAYMENT APP</h5>
-        <a href="https://github.com/ssulaimon/ShoppingApp" target="_blank"
-          ><i class="fa-brands fa-github icon-github"></i
-        ></a>
-      </div>
-      <div id="project">
-        <h5>RESTURANT LANDING PAGE</h5>
-        <a href="https://github.com/ssulaimon/resturant-website" target="_blank"
-          ><i class="fa-brands fa-github icon-github"></i
-        ></a>
-        <a href="https://ssulaimon.github.io/resturant-website/" target="_blank"
-          ><i class="fa-solid fa-link icon-github link"></i
-        ></a>
-      </div>
-      <div id="project">
-        <h5>PORTFOLIO WEBSITE</h5>
-        <a href="https://github.com/ssulaimon/portfolio-website" target="_blank"
-          ><i class="fa-brands fa-github icon-github"></i
-        ></a>
-        <a href="https://ssulaimon.github.io/portfolio-website/" target="_blank"
-          ><i class="fa-solid fa-link icon-github link"></i
-        ></a>
-      </div>
-      <div id="project">
-        <h5>PYTHON ADVENTURE TEXT BASE GAME</h5>
-        <a
-          href="https://github.com/ssulaimon/text-based-adventure-game"
-          target="_blank"
-          ><i class="fa-brands fa-github icon-github"></i
-        ></a>
-      </div>
-    </div>
-    <h4 class="currently" id="about">ABOUT ME</h4>
-    <div class="about-me">
-      <p class="details-about-me">
-        Hello there! I'm Salaudeen Sulaimon, a passionate and self-taught
-        Flutter developer with a burning desire to create seamless,
-        user-friendly mobile applications. My journey in the world of app
-        development began as a personal fascination and has grown into a
-        fulfilling career.
-      </p>
-      <h4>What I Bring to the Table?</h4>
-      <ul>
-        <li class="about-me-list">
-          Flutter Expertise: I have honed my skills in Flutter, Google's UI
-          toolkit, to craft beautiful and efficient cross-platform mobile
-          applications. My commitment to staying up-to-date with the latest
-          Flutter trends ensures that my creations are always on the cutting
-          edge.
-        </li>
-        <li class="about-me-list">
-          Database Mastery: I have hands-on experience with Firebase and MySQL,
-          enabling me to build robust backends and efficient data storage
-          solutions for apps. My proficiency in database management ensures that
-          apps I develop are not only visually stunning but also backed by
-          strong data infrastructure.
-        </li>
-      </ul>
-      <h4>Constantly Evolving</h4>
-      <p class="details-about-me">
-        In the ever-evolving tech landscape, I recognize the importance of
-        diversifying my skillset. Currently, I'm on a learning journey to master
-        HTML, CSS, and JavaScript. This expansion of my skills will not only
-        enhance my front-end development capabilities but also enable me to
-        create full-stack applications, providing a holistic user experience.
-      </p>
-      <h4>Why Choose Me?</h4>
-      <p class="details-about-me">
-        When you choose me as your developer, you're not just getting someone
-        who writes code. You're getting a creative problem-solver who takes
-        pride in crafting user-centric solutions. I understand that the success
-        of an application is measured by its usability and impact, and I'm
-        dedicated to achieving both.
-      </p>
-    </div>
-
     <script src="./script/index.js"></script>
   </body>
 </html>
