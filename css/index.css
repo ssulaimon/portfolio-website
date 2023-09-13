@@ -104,6 +104,28 @@ h3 {
   text-align: center;
   color: var(--primaryColor);
 }
+.footer {
+  background-color: var(--primaryColor);
+
+  padding: 30px 20vw;
+}
+.contact-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+h5 {
+  color: white;
+  margin: 5px 10px;
+}
+.contact {
+  color: white;
+}
+#contact-title {
+  color: black;
+  text-align: center;
+}
+
 @media only screen and (min-width: 780px) {
   .nav-links {
     margin: 0 20px;
@@ -137,5 +159,8 @@ h3 {
   }
   #about {
     font-size: 16px;
+  }
+  .contact-container {
+    justify-content: center;
   }
 }
